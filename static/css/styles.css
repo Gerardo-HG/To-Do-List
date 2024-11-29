@@ -1,0 +1,232 @@
+body,html{
+    background-color: brown;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nav-bar-home{
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav-bar-home nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-home p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-list{
+    display: flex;
+    gap: 15px;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.content {
+    flex: 1;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1); 
+
+}
+
+main{
+    margin: 150px auto;
+    padding: 20px;
+    background-color: white;
+    border: 5px solid blue;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    margin-top: 20px;
+}
+
+button{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color:white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.main-form{
+    border: 5px solid coral;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-form p{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.container-form{
+    border: 5px solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.container-form label{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.container-form input{
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container-form input:focus{
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.container-form button {
+    align-self: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-form button:hover {
+    background-color: #0056b3;
+}
+
+.task-section{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 50px auto;
+   padding: 20px;
+   background-color: #ffffff;
+   border-radius: 10px;
+   width: 90%;
+   max-width: 600px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.task-section h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-align: center;
+}
+
+.task-section input[type="text"]{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;;
+}
+
+.task-section input[type="text"]:focus{
+    border-color: #007BFF; 
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5); 
+}
+
+.task-section .task-box{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+
+}
+
+.completed{
+    background-color: #d4edda; 
+    border: 1px solid #c3e6cb;
+    color: #155724; 
+    opacity: 0.9;
+}
+
+.task-section a{
+    text-decoration: none;
+    font-size: 30px;    
+    
+}
+
+.task-section .t-done{
+    color: green;
+}
+
+.task-section .t-delete{
+    color: red;
+}
+
+

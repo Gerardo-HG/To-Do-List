@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+<div class="content">
+    {% block content %}
+    <section class="task-section">
+      <h1>Hello {{ user.name }}</h1>
+      <form action="{{ url_for('show_tasks',id=user.id_user) }}" method="post">
+      <input autofocus="autofocus" type="text" name="task" placeholder="Write your next task here..." autocomplete="off" required="required">        
+      </form>
+      {% if all_tasks_complete %}
+      <p>Well Done!. You've made all your tasks. 😎😎</p>
+      {% else %}
+        {% for task in user.tasks %}
+            <div class="task-box {% if task.state %}completed{% endif %}">
+                <p>{{ task.description }} {% if task.state %}(---- you can remove this task ----){% endif %}</p>
+                <div>
+                <a href="{{ url_for('done_task',task_id= task.id_task) }}" class="t-done">✔︎</a>
+                <a href="{{ url_for('delete_task',task_id= task.id_task ) }}" class="t-delete">✕</a>
+                </div>      
+            </div>
+        {% endfor %}
+      {% endif %}
+    </section>
+    {% endblock %}
+  </div>

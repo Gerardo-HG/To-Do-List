@@ -1,0 +1,12 @@
+{% from 'bootstrap5/form.html' import render_form %}
+{% extends 'base.html' %}
+
+
+{% block content %}
+<main class="main-form">
+    <p>Register</p>
+    <div class="container-form">
+            {{ render_form(form,novalidate=True) }}
+    </div>
+</main>
+{% endblock %}
